@@ -19,20 +19,20 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="crdp",
-    version="0.0.2",
+    name="crdp-gcp",
+    version="0.0.4",
     author="Ran Bi",
     author_email="biran0079@gmail.com",
-    description="A fast Ramer-Douglas-Peucker algorithm implementation.",
+    description="A fast Ramer-Douglas-Peucker algorithm implementation. Updated for GCP cloud function",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/biran0079/crdp",
+    url="https://github.com/vtecftwy/crdp-gcp",
     keywords="rdp ramer douglas peucker line simplification cython",
     license="MIT",
     packages=(
             find_packages()
     ),
-    install_requires=[],
+    install_requires=['cython'],
     extras_require=dict(
         dev=[
             'cython',
